@@ -15,7 +15,7 @@ Body of portfolio
 
 7 - Create an implementation of a Queue
 ----
-TODO: Provide a link to your completed 03_Queue_Lab
+I have created an impletenation of an array-based queue that uses a circular array. Here is the link to the code: https://github.com/carolinedanzi/03_Queue_Lab/blob/master/ArrayQueue.ipp
 
 7 - Create an implementation of a List
 ----
