@@ -45,7 +45,14 @@ TODO: Provide a link to your completed Vise project (only if you used graph trav
 -----
 TODO: For each pair of data structures listed here, write a short essay comparing and contrasting them in terms of their running times for different operations. (7 points each)
 
-* Array-based list vs. Linked List
+* When using an array-based list as opposed to a linked list, there are different changes in runtime based on the inherent structures. An array-based list can offer easy access to any value in the array, so get(i) and set(i,x) can run in constant time. However, arrays are not very dynamic, so adding and removing from the middle of the array requires shifting the elements to fill in the gap, which takes linear time.  On the other hand, linked lists are more dynamic, so add(i,x) and remove(i) can take constant time if iterators are used.  However, accessing a specific value in the list takes linear time because you have to cycle through all of the list elements.  Therefore, get(i) and set(i,x) take linear time for linked lists. 
+  #####Running Times for Common Operations
+ |Operation | ArrayList | LinkedList|
+ |----------|:---------:|:---------:|
+ |add(i,x)  |    O(n)   |    O(1)   |
+ |remove(i) |    O(n)   |    O(1)   |
+ |get(i)    |    O(1)   |    O(n)   |
+ |set(i,x)  |    O(1)   |    O(n)   |
 * Binary Search Tree vs. Hash Table
 * Adjacency List vs. Adjacency Matrix
 
