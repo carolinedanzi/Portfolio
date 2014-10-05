@@ -64,7 +64,7 @@ TODO: Define/describe each of the following terms, as they apply to memory manag
 
 * The call stack (not to be confused with the stack data structure!)
 * The heap (not to be confused with the heap data structure!)
-* Address
+* **Address** - An address is the exact location in memory where an object is stored.  It is an integer represented in hexadecimal.  In C++, programmers have direct access to memory addresses, and can store them in variables called pointers, or access them using &, the address-of operator.  Direct access to memory is one of the reasons why C++ is such a fast language.  
 * **Pointer** - A pointer stores a memory address, usually of another variable. By pointing to an address in memory, pointers can pass that variable location to a function. The function can then access and modify the data at that memory address.
 
 TODO: Answer the following questions about memory management and dynamic variables
