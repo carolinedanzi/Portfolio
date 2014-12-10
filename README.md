@@ -74,13 +74,14 @@ For each pair of data structures listed here, write a short essay comparing and 
 |next/prev(key)		|    O(n)    |    O(lg n)   |     O(h)	   |
 
 * **Adjacency List vs. Adjacency Matrix:**
+
 ######Running Times for Common Operations
 |Operation	 |Adjacency Matrix|Adjacency Lists|
 |add an edge	 | 	O(1)	  |	O(d)	  |
 |remove edge	 |	O(1)	  |  O(n) or O(d) |
 |get cost of edge|	O(1)	  |	O(d)	  |
 |get neighbors   |	O(n)	  |	O(1)	  |
-|space used	 | 	O(n<sup>2</sup>|O(n+m)	  |
+|space used	 | 	O(n<sup>2</sup>)|O(n+m)	  |
 
 5 - Describe memory management in C++, and correctly use dynamic variables, including destructors
 ----
