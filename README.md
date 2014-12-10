@@ -23,7 +23,7 @@ I implemented the List interface using a Doubly-Linked List. Here is a link to t
 
 7 - Create an implementation of a Binary Search Tree
 ----
-TODO: Provide a link to your completed 06_BST_Lab OR ClosestStarbucks project (only if you used a search tree)
+I implemented a Binary Search Tree with recursive methods. Here is a link to the code: https://github.com/carolinedanzi/06_BST_Lab/blob/master/BST.h
 
 7 - Create an implementation of a Hash Table
 ----
