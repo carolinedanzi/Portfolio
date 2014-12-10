@@ -27,7 +27,7 @@ I implemented a Binary Search Tree with recursive methods. Here is a link to the
 
 7 - Create an implementation of a Hash Table
 ----
-TODO: Provide a link to your compelte 05_Hashing_Lab
+I implemented a Hash Table that uses open addressing with linear probling. Here is a link to the code: https://github.com/carolinedanzi/05_Hashing_Lab/blob/master/HashTable.h
 
 7 - Create an implementation of a Heap
 ----
@@ -35,11 +35,11 @@ TODO: Provide a link to your completed 07_Heap_Lab
 
 7 - Create an implementation of either Adjacency Lists or Adjacency Matrices
 ----
-I have created an implementation of a graph using adjacency lists. Here is a link to the code: https://github.com/carolinedanzi/08_Graph_Lab/blob/master/Graph.cpp
+TODO: Provide a link to your completed 08_Graph_Lab
 
 7 - Implement graph algorithms
 ----
-I have implemented a depth-first search graph traversal that prints out the nodes in the order they are looked at. The code is in the method "DFS": https://github.com/carolinedanzi/08_Graph_Lab/blob/master/Graph.cpp
+TODO: Add a graph traversal (DFS or BFS) to 08_Graph_Lab and provide a link
 
 21 - Determine space and time requirements of common data structure methods
 -----
