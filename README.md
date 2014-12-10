@@ -75,8 +75,9 @@ For each pair of data structures listed here, write a short essay comparing and 
 
 * **Adjacency List vs. Adjacency Matrix:**
 
-######Running Times for Common Operations
+#####Running Times for Common Operations
 |Operation	 |Adjacency Matrix|Adjacency Lists|
+|----------------|:--------------:|:-------------:|
 |add an edge	 | 	O(1)	  |	O(d)	  |
 |remove edge	 |	O(1)	  |  O(n) or O(d) |
 |get cost of edge|	O(1)	  |	O(d)	  |
