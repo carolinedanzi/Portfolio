@@ -31,7 +31,7 @@ I implemented a Hash Table that uses open addressing with linear probling. Here 
 
 7 - Create an implementation of a Heap
 ----
-TODO: Provide a link to your completed 07_Heap_Lab
+I implemented a min-Heap. Here is a link to the code: https://github.com/carolinedanzi/07_Heap_Lab/blob/master/Heap.h
 
 7 - Create an implementation of either Adjacency Lists or Adjacency Matrices
 ----
