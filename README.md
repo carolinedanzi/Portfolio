@@ -43,31 +43,36 @@ I have implemented a depth-first search graph traversal that prints out the node
 
 21 - Determine space and time requirements of common data structure methods
 -----
-TODO: For each pair of data structures listed here, write a short essay comparing and contrasting them in terms of their running times for different operations. (7 points each)
+For each pair of data structures listed here, write a short essay comparing and contrasting them in terms of their running times for different operations. (7 points each)
 
-* When using an array-based list as opposed to a linked list, there are different changes in runtime based on the inherent structures. An array-based list can offer easy access to any value in the array, so get(i) and set(i,x) can run in constant time. However, arrays are not very dynamic, so adding and removing from the middle of the array requires shifting the elements to fill in the gap, which takes linear time.  On the other hand, linked lists are more dynamic, so add(i,x) and remove(i) can take constant time if iterators are used.  However, accessing a specific value in the list takes linear time because you have to cycle through all of the list elements.  Therefore, get(i) and set(i,x) take linear time for linked lists. 
+* **Array-Based List vs. Linked List:** When using an array-based list as opposed to a linked list, there are different changes in runtime based on the inherent structures. An array-based list offers random access to any value in the array, so get(i) and set(i,x) at indices will run in constant time. However, arrays are not very dynamic, so adding and removing from the middle of the array requires shifting the elements to fill in the gap, which takes linear time.  On the other hand, linked lists can only offer sequential access, where you have to search through all the elements in order to find the one you are looking for.  Therefore, get(i) and set(i, x) at indices take linear time.  Additionally, adding and removing when given an index will take linear time since we have to search through all the elements.  However, these running times change when using iterators, which act like bookmarks that point to where you are in the data structure.  Adding and removing at an iterator in an array list still takes linear time because the elements will still need to be shifted.  In contrast, adding and removing at an iterator for linked lists will improve the running time to constant time.  Since the iterator is already pointing to where we want to add or remove, all that needs to be done is rearrange pointers, which takes constant time.  Get and set at an iterator will take constant time for both data structures, since the iterator will be pointing to the element we wish to get or change.     
 
 #####Running Times for Common Operations
-|Operation | ArrayList | LinkedList|
-|----------|:---------:|:---------:|
-|add(i,x)  |    O(n)   |    O(1)   |
-|remove(i) |    O(n)   |    O(1)   |
-|get(i)    |    O(1)   |    O(n)   |
-|set(i,x)  |    O(1)   |    O(n)   |
+|Operation                   | ArrayList | LinkedList|
+|----------------------------|:---------:|:---------:|
+|get an iterator for an index|    O(1)   |    O(n)   |
+|add at index                |    O(n)   |    O(1)   |
+|remove at index             |    O(n)   |    O(1)   |
+|add at iterator             |    O(n)   |    O(1)   |
+|remove at iterator          |    O(n)   |    O(1)   |
+|get at index                |    O(1)   |    O(n)   |
+|set at index                |    O(1)   |    O(n)   |
+|get at iterator             |    O(1)   |    O(1)   |
+|set at iterator             |    O(1)   |    O(1)   |
 
 * Binary Search Tree vs. Hash Table
 * Adjacency List vs. Adjacency Matrix
 
 5 - Describe memory management in C++, and correctly use dynamic variables, including destructors
 ----
-TODO: Define/describe each of the following terms, as they apply to memory management in C++
+Define/describe each of the following terms, as they apply to memory management in C++
 
 * **The call stack** - The call stack keeps track of function calls and local variables while a program is running.  The elements are pushed and popped off the back of the Stack in the order they were added, so the stack is a LIFO (last-in-first-out) queue.  Variables stored here are statically allocated, meaning they are allocated at compile time.  The call stack also keeps track of which function called which function, which can be helpful for debugging.  
 * **The heap** - The heap is the part of RAM (random access memory) where dynamically allocated variables are stored.  This is an important part of memory management – pointers point here, and a programmer can run into trouble if they have a memory leak and the heap fills up.  
 * **Address** - An address is the exact location in memory where an object is stored.  It is an integer represented in hexadecimal.  In C++, programmers have direct access to memory addresses, and can store them in variables called pointers, or access them using &, the address-of operator.  Direct access to memory is one of the reasons why C++ is such a fast language.  
 * **Pointer** - A pointer stores a memory address, usually of another variable. By pointing to an address in memory, pointers can pass that variable location to a function. The function can then access and modify the data at that memory address.
 
-TODO: Answer the following questions about memory management and dynamic variables
+Answer the following questions about memory management and dynamic variables
 
 * **What is a memory leak, and why is it bad?**
 A memory leak occurs when there is an object that is no longer in use or reachable (there is no pointer to it) but it still exists in memory.  This is bad because as the program continues to run, the amount of space in memory will decrease as more objects are created and stored, but never destroyed.  Eventually you will run out of memory.
