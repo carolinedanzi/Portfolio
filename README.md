@@ -108,7 +108,8 @@ TODO: Answer the following questions about templates in C++
 
 * **What is the main benefit of using templates when creating collection classes?**
 Templates let programmers define the behavior for a class without specifiying the data type it is used for.  The main benefit to this is that we do not have to write a collection class for each data type, we can just write one class that can handle all data types.  For example, we do not have to write a Queue for ints and a Queue for strings and a Queue for longs, we can just write one Queue class that can handle all of these data types.  This allows for more flexibility for our code, and the collection class will not have to depend on the data type it was intended for.  Source: http://www.cprogramming.com/tutorial/templates.html
-* In normal C++ code the .h file contains the declarations, and the .cpp file contains implementations. Explain why this isn't the case with template-based collection classes.
+* **In normal C++ code the .h file contains the declarations, and the .cpp file contains implementations. Explain why this isn't the case with template-based collection classes.**
+When the cpp file containing the class implementation is compiled, the compiler will complain because it needs to know what data type to use for the class.  If we just use templates without specifying the data type, the compiler will complain.  Therefore, we put the method implementations in the header file, which will be compiled when an instance of that class is created, at which point a data type will be supplied and the compiler will be satisfied.  
 
 20 - Using time and space analysis, justify the selection of a data structure for a given application
 ----
