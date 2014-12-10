@@ -79,10 +79,11 @@ For each pair of data structures listed here, write a short essay comparing and 
 |Operation	 |Adjacency Matrix|Adjacency Lists|
 |----------------|:--------------:|:-------------:|
 |add an edge	 | 	O(1)	  |	O(d)	  |
-|remove edge	 |	O(1)	  |  O(n) or O(d) |
+|remove edge	 |	O(1)	  |  	O(d) 	  |
 |get cost of edge|	O(1)	  |	O(d)	  |
 |get neighbors   |	O(n)	  |	O(1)	  |
 |space used	 | 	O(n<sup>2</sup>)|O(n+m)	  |
+**n = number of nodes in graph; m = number of edges in graph; d = maximum degree of any node, which at worst is n**
 
 5 - Describe memory management in C++, and correctly use dynamic variables, including destructors
 ----
