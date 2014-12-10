@@ -62,7 +62,17 @@ For each pair of data structures listed here, write a short essay comparing and 
 |get iterator at front/back  |    O(1)   |    O(1)   |
 |add/remove at front/back    |    O(1)   |    O(1)   |
 
-* Binary Search Tree vs. Hash Table
+* **Binary Search Tree vs. Hash Table:**
+
+#####Running Times for Common Operations
+|Operation 		| Hash Table | Balanced BST |Unbalanced BST|
+|-----------------------|:----------:|:------------:|:------------:|
+|add(key, value)	|    O(1)    |    O(lg n)   |	  O(h)     |
+|remove(key)		|    O(1)    |	  O(lg n)   |     O(h)     |
+|get/set when given key |    O(1)    |    O(lg n)   |     O(h)     |
+|find min/max		|    O(n)    |    O(lg n)   |     O(h)     |
+|next/prev(key)		|    O(n)    |    O(lg n)   |     O(h)	   |
+
 * Adjacency List vs. Adjacency Matrix
 
 5 - Describe memory management in C++, and correctly use dynamic variables, including destructors
