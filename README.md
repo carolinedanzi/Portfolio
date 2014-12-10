@@ -15,7 +15,7 @@ Body of portfolio
 
 7 - Create an implementation of a Queue using a circular array-based list
 ----
-I have created an impletenation of an array-based queue that uses a circular array. Here is the link to the code: https://github.com/carolinedanzi/03_Queue_Lab/blob/master/ArrayQueue.ipp
+I have created an implementation of an array-based queue that uses a circular array. Here is the link to the code: https://github.com/carolinedanzi/03_Queue_Lab/blob/master/ArrayQueue.ipp
 
 7 - Create an implementation of a List
 ----
@@ -35,11 +35,11 @@ TODO: Provide a link to your completed 07_Heap_Lab
 
 7 - Create an implementation of either Adjacency Lists or Adjacency Matrices
 ----
-TODO: Provide a link to your completed 08_Graph_Lab
+I have created an implementation of a graph using adjacency lists. Here is a link to the code: https://github.com/carolinedanzi/08_Graph_Lab/blob/master/Graph.cpp
 
 7 - Implement graph algorithms
 ----
-TODO: Add a graph traversal (DFS or BFS) to 08_Graph_Lab and provide a link
+I have implemented a depth-first search graph traversal that prints out the nodes in the order they are looked at. The code is in the method "DFS": https://github.com/carolinedanzi/08_Graph_Lab/blob/master/Graph.cpp
 
 21 - Determine space and time requirements of common data structure methods
 -----
