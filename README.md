@@ -51,7 +51,7 @@ For each pair of data structures listed here, write a short essay comparing and 
 |Operation                   | ArrayList | LinkedList|
 |----------------------------|:---------:|:---------:|
 |get an iterator for an index|    O(1)   |    O(n)   |
-|add/remove at index         |    O(n)   |    O(1)   |
+|add/remove at index         |    O(n)   |    O(n)   |
 |add/remove at iterator      |    O(n)   |    O(1)   |
 |get/set at index            |    O(1)   |    O(n)   |
 |get/set at iterator         |    O(1)   |    O(1)   |
